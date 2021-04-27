@@ -10,6 +10,6 @@ public class TobySpringStudyApplication {
 		SpringApplication.run(TobySpringStudyApplication.class, args);
 	}
 
-	
+
 
 }

@@ -1,5 +1,6 @@
 package woowastudy.tobyspringstudy;
 
+import woowastudy.tobyspringstudy.user.dao.DUserDao;
 import woowastudy.tobyspringstudy.user.dao.UserDao;
 import woowastudy.tobyspringstudy.user.domain.User;
 
@@ -7,7 +8,7 @@ import java.sql.SQLException;
 
 public class Application {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
-        UserDao dao = new UserDao();
+        UserDao dao = new DUserDao();
 
         User user = new User();
         user.setId("whiteship");
