@@ -5,7 +5,11 @@ import woowastudy.tobyspringstudy.user.domain.User;
 import java.sql.*;
 
 public class UserDao {
-    private ConnectionMaker connectionMaker;
+    private ConnectionMaker connectionMaker; // Bean끼리는 ㄱㅊ
+
+    // 인스턴스 변수를 가지도록 하면 심각한 문제가 발생한다.
+    // private Connection c;
+    // private User user;
 
     public UserDao(ConnectionMaker connectionMaker) {
         this.connectionMaker = connectionMaker;
